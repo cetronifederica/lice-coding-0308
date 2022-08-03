@@ -1,6 +1,6 @@
 // quando clicco sul bottone faccio una chiamata alla API 
 const addBtn = document.getElementById('add');
-console.log(addBtn);
+//console.log(addBtn);
 addBtn.addEventListener('click', addDog);
 
 
@@ -27,7 +27,7 @@ axios.get('https://dog.ceo/api/breeds/image/random')
 function createImg(url){
 let image = document.createElement('img');
 image.src = url;
-image.className = 'img-fluid';
+image.className = 'img-thumbnail';
 image.alt = 'foto di un cane';
 //dopo aver creat l'oggetto appendo la foto alla pagina
 document.getElementById('gallery').appendChild(image);
